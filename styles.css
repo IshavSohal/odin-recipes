@@ -7,6 +7,30 @@ h1, h2, h3, p, ul{
     text-align: center; 
 }
 
+.header{
+    position:sticky;
+    top: 0px;
+    left: 0px;
+    background-color: transparent;
+}
+
+.return-home{
+    margin: 20px auto;
+    border: 10px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    background-color: rgb(206, 52, 52);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 h1 {
     font-size: 100px;
     width: 600px;
@@ -36,18 +60,18 @@ img {
     display: block;
 }
 
-p, ul, ol{
+p, ol{
     font-size: 30px;
 }
 
 ol{
-    width: 1500px;
-    margin-left: auto;
-    margin-right: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-p{
-    width: 1200px;
+.description{
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid black;
@@ -55,33 +79,47 @@ p{
     padding: 20px;
 }
 
-ul{
-    list-style: none;
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto; 
-}
 
 li{
     padding: 20px;
     border: 2px solid black;
     margin: 10px;
     background-color:rgb(241, 225, 202);
-}
-
-.return-home{
-    display: block;
-    width: 500px;
-    margin: 20px auto;
-    border: 10px solid black;
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    background-color: rgb(206, 52, 52);
+    max-width:1200px;
 }
 
 a {
     text-decoration: none;
-    background-color: rgb(241, 225, 202);;
+    background-color: rgb(241, 225, 202);
+    display: block;
+    padding: 20px;
+    border: 2px solid black;
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 30px;
 }
+
+
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.list div{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color:rgb(241, 225, 202);
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
 
