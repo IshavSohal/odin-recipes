@@ -3,8 +3,27 @@
     background-color: rgb(243, 181, 66);
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 h1, h2, h3, p, ul{
     text-align: center; 
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(241, 225, 202);
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    max-width: 500px;
 }
 
 .header{
@@ -12,23 +31,17 @@ h1, h2, h3, p, ul{
     top: 0px;
     left: 0px;
     background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: top;
 }
 
 .return-home{
-    margin: 20px auto;
-    border: 10px solid black;
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    background-color: rgb(206, 52, 52);
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color: rgb(241, 225, 202);
 }
 
 h1 {
@@ -88,18 +101,6 @@ li{
     max-width:1200px;
 }
 
-a {
-    text-decoration: none;
-    background-color: rgb(241, 225, 202);
-    display: block;
-    padding: 20px;
-    border: 2px solid black;
-    max-width: 500px;
-    margin: 10px auto;
-    text-align: center;
-    font-size: 30px;
-}
-
 
 
 .list{
@@ -108,10 +109,22 @@ a {
     justify-content: center;
     align-items: stretch;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .list div{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color:rgb(241, 225, 202);
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.list a{
+    margin: 10px auto;
     text-align: center;
     font-size: 30px;
     padding: 20px;
